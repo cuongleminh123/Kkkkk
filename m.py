@@ -207,7 +207,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: Free Fire"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -245,7 +245,7 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
-            response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
+            response = "✅ Usage :- /bgmi <IP> <PORT> <Thời Gian>"  # Updated command syntax
     else:
         response = "❌ You Are Not Authorized To Use This Command ❌."
 
@@ -285,8 +285,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @hidden_25
-Official Channel :- t.me/AkHacker3
+Buy From :- @cuonghackgames1
+Official Channel :- t.me/cuonghackgames1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -303,7 +303,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-✅Join :- t.me/AkHacker3'''
+✅Join :- t.me/cuonghackgames1'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -326,10 +326,9 @@ Vip 🌟 :
 > After Attack Limit : 5 Min
 -> Concurrents Attack : 3
 
-Pr-ice List💸 :
-Day-->50 Rs
-Week-->300 Rs
-Month-->1000 Rs
+Mua BOT💸 :
+1Ngày-->15k
+3Ngày-->40k
 '''
     bot.reply_to(message, response)
 
